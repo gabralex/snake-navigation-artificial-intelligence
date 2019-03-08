@@ -12,13 +12,14 @@
 # You should have received a copy of the GNU Affero General Public License along with this program. If not, see
 # <http://www.gnu.org/licenses/>.
 
-####################################################################################################################################
-# Exclusion patterns for Jet Brains: PyCharm
-
-# Directory-based project format
-.idea/
 
 ####################################################################################################################################
-# Exclusion patterns for Python
-venv/
-__pycache__/
+from enum import Enum
+
+
+####################################################################################################################################
+class WorldElement(Enum):
+    AGENT_HEAD = 0
+    AGENT_TAIL = 1
+    OBSTACLE = 2
+    GOAL = 3
