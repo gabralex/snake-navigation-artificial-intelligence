@@ -16,3 +16,8 @@
 class Navigator:
     def x(self):
         pass
+
+
+class Definition:
+    def a(self):
+        pass

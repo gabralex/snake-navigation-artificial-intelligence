@@ -19,3 +19,12 @@ from game.snake._environment import SnakeEnvironment
 
 ####################################################################################################################################
 environment = SnakeEnvironment
+
+
+class Definition():
+    def a(self):
+        pass
+
+    @classmethod
+    def add_command_line_options(cls, argument_parser):
+        pass

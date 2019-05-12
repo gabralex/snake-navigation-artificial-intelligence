@@ -15,10 +15,13 @@
 
 ####################################################################################################################################
 from game.interface import UserInterface
-# from game.world import
-# from agent import SelectedAgent
+from game.snake import Definition as Game
+from agent.human import Definition as Agent
 
 
 ####################################################################################################################################
-interface = UserInterface()
+# Define the default game
+game = Game()
+agent = Agent(game)
+interface = UserInterface(game, agent)
 interface.show()

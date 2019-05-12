@@ -19,3 +19,9 @@ from agent import Navigator
 ####################################################################################################################################
 class HumanNavigator(Navigator):
     pass
+
+
+
+class Definition:
+    def a(self):
+        pass
