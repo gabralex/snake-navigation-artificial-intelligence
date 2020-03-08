@@ -12,13 +12,16 @@
 # You should have received a copy of the GNU Affero General Public License along with this program. If not, see
 # <http://www.gnu.org/licenses/>.
 
-####################################################################################################################################
-# Exclusion patterns for Jet Brains: PyCharm
-
-# Directory-based project format
-.idea/
 
 ####################################################################################################################################
-# Exclusion patterns for Python
-venv/
-__pycache__/
+from game.interface import UserInterface
+from game.snake import Definition as Game
+from agent.human import Definition as Agent
+
+
+####################################################################################################################################
+# Define the default game
+game = Game()
+agent = Agent(game)
+interface = UserInterface(game, agent)
+interface.show()

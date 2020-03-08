@@ -12,13 +12,19 @@
 # You should have received a copy of the GNU Affero General Public License along with this program. If not, see
 # <http://www.gnu.org/licenses/>.
 
-####################################################################################################################################
-# Exclusion patterns for Jet Brains: PyCharm
-
-# Directory-based project format
-.idea/
 
 ####################################################################################################################################
-# Exclusion patterns for Python
-venv/
-__pycache__/
+from game.snake._environment import SnakeEnvironment
+
+
+####################################################################################################################################
+environment = SnakeEnvironment
+
+
+class Definition():
+    def a(self):
+        pass
+
+    @classmethod
+    def add_command_line_options(cls, argument_parser):
+        pass

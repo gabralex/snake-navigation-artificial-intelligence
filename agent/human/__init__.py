@@ -13,12 +13,15 @@
 # <http://www.gnu.org/licenses/>.
 
 ####################################################################################################################################
-# Exclusion patterns for Jet Brains: PyCharm
+from agent import Navigator
 
-# Directory-based project format
-.idea/
 
 ####################################################################################################################################
-# Exclusion patterns for Python
-venv/
-__pycache__/
+class HumanNavigator(Navigator):
+    pass
+
+
+
+class Definition:
+    def a(self):
+        pass
